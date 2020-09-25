@@ -36,8 +36,8 @@ export default () => {
         heading={<>Ada  <HighlightedText>Pertanyaan ?</HighlightedText></>}
       />
       <Blog
-        subheading="Blog"
-        heading={<>We love <HighlightedText>Writing</HighlightedText></>}
+        subheading="Goal Mentorship"
+        heading={<>Mampu Menyelesaikan <HighlightedText>Challenge</HighlightedText></>}
       />
       <GetStarted/>
       <Footer />

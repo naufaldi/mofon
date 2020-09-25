@@ -76,8 +76,8 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
     { imageSrc: SupportIconImage, title: "Webinar", description: " Ikuti Webinar Inklusif untuk peserta dengan materi dasar hingga lanjutan, step by step untuk membangun sebuah web" },
     { imageSrc: CustomizeIconImage, title: "Grup", description: "Bergabung dengan Grup Inklusif untuk komunikasi, konsultasi kepada mentor" },
     { imageSrc: ReliableIconImage, title: "Terbatas", description: "Peserta terbatas untuk kelas mentoring yang lebih intensif" },
-    { imageSrc: ReliableIconImage, title: "Silabus", description: "Silabus praktis, fundamental yang bisa diimplementasikan berdasarkan studi kasus" },
-    { imageSrc: ReliableIconImage, title: "Goal", description: "Ikuti Kelas, Praktikan Kode, Konsultasi dan jadilah seorang Frontend" },
+    { imageSrc: FastIconImage, title: "Silabus", description: "Silabus praktis, fundamental yang bisa diimplementasikan berdasarkan studi kasus" },
+    { imageSrc: SimpleIconImage, title: "Goal", description: "Ikuti Kelas, Praktikan Kode, Konsultasi dan jadilah seorang Frontend" },
   ];
 
   if (!cards) cards = defaultCards;

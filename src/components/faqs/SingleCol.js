@@ -56,7 +56,7 @@ export default ({
     {
       question: "Berapa durasi mentorship ?",
       answer:
-        "Hanya 3 Minggu. Awalnya 1 Bulan, tapi setelah evaluasi, sepertinya 3 minggu sudah cukup asalkan mau konsisten."
+        "Hanya 3 Minggu. Awalnya 1 Bulan, tapi setelah evaluasi, sepertinya 3 minggu sudah cukup sesuai dengan silabus yang telah disusun."
     },
     {
       question: "Saya takut tertinggal materi,Bagaimana ?",
