@@ -76,7 +76,7 @@ export default ({
   primaryButtonText = "Daftar Sekarang",
   planDurations = [
     {
-      text: "Batch",
+      text: "Mahasiswa",
     },
   ]
 }) => {
@@ -84,6 +84,12 @@ export default ({
     {
       name: "Frontend Plan",
       durationPrices: ["Rp 50K"],
+      mainFeature: "Frontend Pemula",
+      features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"]
+    },
+    {
+      name: "Frontend Plan",
+      durationPrices: ["Rp 85K"],
       mainFeature: "Frontend Pemula",
       features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"]
     },

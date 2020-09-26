@@ -83,7 +83,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import Footer from "components/footers/MiniCenteredFooter.js";
 
 /* Ready Made Pages (from demos folder) */
-import ServiceLandingPage from "landingpage/ServiceLandingPage.js";
+import Mofon from "landingpage/Mofon.js";
 
 /* Inner Pages */
 // import LoginPage from "pages/Login.js";
@@ -111,7 +111,7 @@ export default function App() {
           <ComponentRenderer />
         </Route>
         <Route path="/">
-          <ServiceLandingPage />
+          <Mofon />
         </Route>
       </Switch>
     </Router>
@@ -123,7 +123,7 @@ export default function App() {
 // export default AgencyLandingPage;
 // export default SaaSProductLandingPage;
 // export default RestaurantLandingPage;
-// export default ServiceLandingPage;
+// export default Mofon;
 // export default HostingCloudLandingPage;
 
 // export default LoginPage;

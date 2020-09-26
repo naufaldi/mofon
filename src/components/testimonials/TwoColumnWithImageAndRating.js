@@ -82,21 +82,41 @@ export default ({
       stars: 5,
       profileImageSrc:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-      heading: "Amazing User Experience",
+      heading: "Tercerahkan dengan Materinya!",
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      customerName: "Charlotte Hale",
-      customerTitle: "CEO, Delos Inc."
+        "Mantap sekali mas, meski materinya termasuk berat banget tapi ngecovernya padet. Alhamdulillah jadi tercerahkan sama scss.",
+      customerName: "Akhmad Dani M.",
+      customerTitle: "Socmed Expert."
     },
     {
       stars: 5,
       profileImageSrc:
         "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-      heading: "Love the Developer Experience and Design Principles !",
+      heading: "Gokil, Daging Banget!!",
       quote:
-        "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-      customerName: "Adam Cuppy",
-      customerTitle: "Founder, EventsNYC"
+        "Gokil, daging bgt mas, tapi saya sempet tertinggal tadi huhu. Semoga ada rekamannya, terimakasih mas:) sukses selalu",
+      customerName: "Gilang Segara B",
+      customerTitle: "Mahasiswa"
+    },
+    {
+      stars: 5,
+      profileImageSrc:
+        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+      heading: "Materi Slicing, Enak Banget!",
+      quote:
+        "Kebantu banget sama pemberian contoh study case.Tips dari mas Faldi sendiri berdasarkan pengalaman, sangat mencerahkan. Menjawab pertanyaan sangat clear.",
+      customerName: "Farid",
+      customerTitle: "Mahasiswa"
+    },
+    {
+      stars: 5,
+      profileImageSrc:
+        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+      heading: "Terbuka Materi Baru!",
+      quote:
+        "Materinya ngebuka wawasan baru banget. Akhirnya jadi ngeh lagi soal SCSS dkk. ",
+      customerName: "Aishaa Lula",
+      customerTitle: "Mahasiswa"
     }
   ]
 }) => {
