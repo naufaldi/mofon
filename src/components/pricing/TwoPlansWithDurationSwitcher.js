@@ -45,6 +45,18 @@ const PlanHeader = styled.div`
   .duration {
     ${tw`lowercase text-gray-500 font-medium tracking-widest`}
   }
+  .price-wrong {
+    ${tw`font-bold my-1 text-gray-500`}
+  }
+  .slash-wrong {
+    ${tw`text-xl text-gray-500`}
+  }
+  .duration-wrong {
+    ${tw`lowercase text-gray-500 font-medium tracking-widest`}
+  }
+  .priceAndDuration-wrong{
+    ${tw`line-through`}
+  }
   .mainFeature {
     ${tw`text-gray-500 text-sm font-medium tracking-wide`}
   }
@@ -76,20 +88,22 @@ export default ({
   primaryButtonText = "Daftar Sekarang",
   planDurations = [
     {
-      text: "Mahasiswa",
+      text: "Person",
     },
   ]
 }) => {
   const defaultPlans = [
     {
-      name: "Frontend Plan",
+      name: "Mahasiswa Plan",
       durationPrices: ["Rp 50K"],
+      durationPricesWrong: ["Rp 65K"],
       mainFeature: "Frontend Pemula",
       features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"]
     },
     {
-      name: "Frontend Plan",
+      name: "Umum Plan",
       durationPrices: ["Rp 85K"],
+      durationPricesWrong: ["Rp 100K"],
       mainFeature: "Frontend Pemula",
       features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"]
     },
@@ -115,6 +129,11 @@ export default ({
                   <span className="price">{plan.durationPrices[activeDurationIndex]}</span>
                   <span className="slash"> / </span>
                   <span className="duration">{planDurations[activeDurationIndex].text}</span>
+                </span>
+                <span className="priceAndDuration-wrong">
+                  <span className="price-wrong">{plan.durationPricesWrong[activeDurationIndex]}</span>
+                  <span className="slash-wrong"> / </span>
+                  <span className="duration-wrong">{planDurations[activeDurationIndex].text}</span>
                 </span>
                 <span className="name">{plan.name}</span>
                 <span className="mainFeature">{plan.mainFeature}</span>
