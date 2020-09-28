@@ -99,14 +99,16 @@ export default ({
       durationPrices: ["Rp 50K"],
       durationPricesWrong: ["Rp 65K"],
       mainFeature: "Frontend Pemula",
-      features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"]
+      features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"],
+      url: ["https://forms.gle/hrhA7CMfRDxwFVHW7"]
     },
     {
       name: "Umum Plan",
       durationPrices: ["Rp 85K"],
       durationPricesWrong: ["Rp 100K"],
       mainFeature: "Frontend Pemula",
-      features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"]
+      features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"],
+      url: ["https://forms.gle/N7ee2RjSpAuT5vD77"]
     },
   ];
 
@@ -147,7 +149,8 @@ export default ({
                 ))}
               </PlanFeatures>
               <PlanAction>
-                <BuyNowButton href="https://forms.gle/KnwafL2PTnpTwSEp8" >{primaryButtonText}</BuyNowButton>
+              <BuyNowButton href={plan.url[activeDurationIndex]} target="_blank" >Daftar</BuyNowButton>
+              
               </PlanAction>
             </Plan>
           ))}
