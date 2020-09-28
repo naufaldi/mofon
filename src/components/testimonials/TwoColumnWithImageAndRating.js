@@ -81,7 +81,7 @@ export default ({
     {
       stars: 5,
       profileImageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
       heading: "Tercerahkan dengan Materinya!",
       quote:
         "Mantap sekali mas, meski materinya termasuk berat banget tapi ngecovernya padet. Alhamdulillah jadi tercerahkan sama scss.",
@@ -111,7 +111,7 @@ export default ({
     {
       stars: 5,
       profileImageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
       heading: "Terbuka Materi Baru!",
       quote:
         "Materinya ngebuka wawasan baru banget. Akhirnya jadi ngeh lagi soal SCSS dkk. ",

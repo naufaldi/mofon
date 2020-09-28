@@ -68,7 +68,7 @@ export default ({
   ),
   description = "Silabus dibuat berdasarkan pengalaman mentor selama 2 Tahun di industri, didesain untuk dipelajari para pemula dalam dunia frontend development. Serta keikhlasan mentor untuk mengajarkan frontend dengan sungguh-sungguh",
   primaryButtonText = "Lihat Silabus",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "https://s.id/silabus-mentorship",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,

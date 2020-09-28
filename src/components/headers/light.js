@@ -72,10 +72,10 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="https://s.id/rZRgg">Silabus</NavLink>
+      <NavLink href="https://s.id/silabus-mentorship">Silabus</NavLink>
       <NavLink href="https://naufaldi.xyz/">Mentor</NavLink>
       <NavLink href="https://twitter.com/F2aldi">Contact</NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Daftar</PrimaryLink>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#daftarMentee">Daftar</PrimaryLink>
     </NavLinks>
   ];
 

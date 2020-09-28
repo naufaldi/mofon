@@ -1,4 +1,7 @@
 /* Below animations are fore modal created using React-Modal */
+html {
+    scroll-behavior: smooth;
+}
 .ReactModal__Overlay {
     transition: transform 300ms ease-in-out;
     transition-delay: 100ms;

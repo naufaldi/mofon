@@ -26,7 +26,7 @@ export default ({
   subheading = "Tertarik Mentorship?",
   heading = "Daftar Mentorship Sekarang Juga.",
   primaryLinkText = "Daftar",
-  primaryLinkUrl = "http://timerse.com",
+  primaryLinkUrl = "#daftarMentee",
   secondaryLinkText = "Hubungi Kami",
   secondaryLinkUrl = "https://twitter.com/F2aldi",
   pushDownFooter = true

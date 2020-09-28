@@ -28,7 +28,8 @@ const Plan = styled.div`
     props.featured &&
     css`
       ${tw`border-2 border-gray-200 shadow-none`}
-    `}
+    `
+    }
 `;
 
 const PlanHeader = styled.div`
@@ -114,7 +115,7 @@ export default ({
   const [activeDurationIndex, setActiveDurationIndex] = useState(0);
 
   return (
-    <Container>
+    <Container id="daftarMentee">
       <ContentWithPaddingXl>
         <HeaderContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
@@ -146,7 +147,7 @@ export default ({
                 ))}
               </PlanFeatures>
               <PlanAction>
-                <BuyNowButton>{primaryButtonText}</BuyNowButton>
+                <BuyNowButton href="https://forms.gle/KnwafL2PTnpTwSEp8" >{primaryButtonText}</BuyNowButton>
               </PlanAction>
             </Plan>
           ))}
