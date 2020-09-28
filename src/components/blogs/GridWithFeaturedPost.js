@@ -9,6 +9,8 @@ import { ReactComponent as SvgDotPatternIcon } from "images/dot-pattern.svg";
 import ChallangeHuddle from 'images/mofon/huddle.jpg';
 import ChallangeSignUp from 'images/mofon/signup.jpg';
 import ChallangeInsure from 'images/mofon/insure.jpg';
+import ChallangeVercel from 'images/mofon/vercel.png';
+import ChallangeGithub from 'images/mofon/github.png';
 
 
 
@@ -89,6 +91,20 @@ export default ({
       title: "Challenge Insure landing page",
       authorName: "Landingpage",
       url: "https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8"
+    },
+    {
+      postImageSrc:
+        `${ChallangeGithub}`,
+      title: "Challange Upload Project ke Github",
+      authorName: "Version Control Sistem",
+      url: "https://www.github.com"
+    },
+    {
+      postImageSrc:
+        `${ChallangeVercel}`,
+      title: "Challange Deploy Web di Vercel",
+      authorName: "Deploy",
+      url: "https://vercel.com"
     },
   ]
 }) => {
