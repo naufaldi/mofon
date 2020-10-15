@@ -1,9 +1,8 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import {Container as ContainerBase } from "components/misc/Layouts.js"
+import { Container as ContainerBase } from "components/misc/Layouts.js"
 import logo from "images/logo-mofon.svg";
-import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 
@@ -40,7 +39,7 @@ export default () => {
           </LogoContainer>
           <LinksContainer>
             <Link href="https://mentee.naufaldi.xyz">Home</Link>
-            <Link href="https://s.id/silabus-mentorship">Silabus</Link>
+            <Link href="http://bit.ly/silabus-mofon">Silabus</Link>
             <Link href="https://naufaldi.xyz">Mentor</Link>
             <Link href="https://twitter.com/f2aldi">Contact Us</Link>
             <Link href="https://blog.cerita-faldi.xyz">Blog</Link>
@@ -54,7 +53,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-          &copy; 2020 MOFON. All Rights Reserved
+            &copy; 2020 MOFON. All Rights Reserved
           </CopyrightText>
         </Row>
       </Content>
