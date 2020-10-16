@@ -60,13 +60,13 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 
 export default ({
   heading = "Mentorship Frontend Website",
- description="Mari Belajar Frontend Website mulai dari HTML, CSS dan SASS untuk menunjang impianmu menjadi seorang Frontend Website. Pendaftaran Batch 2, 11 - 23 Okt 2020",
-  primaryButtonText="Daftar Sekarang",
-  primaryButtonUrl="#daftarMentee",
-  watchVideoButtonText="Watch Video",
-  watchVideoYoutubeUrl="https://www.youtube.com/embed/1O6RjLxM844",
-  imageSrc=DesignIllustration,
-  imageCss=null,
+  description = "Mari Belajar Frontend Website mulai dari HTML, CSS dan SASS untuk menunjang impianmu menjadi seorang Frontend Website. Pendaftaran Batch 2, 11 - 23 Okt 2020",
+  primaryButtonText = "Daftar Sekarang",
+  primaryButtonUrl = "#daftarMentee",
+  watchVideoButtonText = "Watch Video",
+  watchVideoYoutubeUrl = "https://www.youtube.com/embed/TLmz_QfaEPM",
+  imageSrc = DesignIllustration,
+  imageCss = null,
   imageDecoratorBlob = false,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
