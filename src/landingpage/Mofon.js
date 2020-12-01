@@ -3,7 +3,6 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
-
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
@@ -14,33 +13,58 @@ import FAQ from "components/faqs/SingleCol.js";
 import GetStarted from "components/cta/GetStartedLight.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 
-const HighlightedText = tw.span`text-primary-500`
+const HighlightedText = tw.span`text-primary-500`;
 
 export default () => {
   return (
     <AnimationRevealPage>
       <Hero />
-      <Features 
-        heading={<>Keuntungan <HighlightedText>Mentorship</HighlightedText></>}
+      <Features
+        heading={
+          <>
+            Keuntungan <HighlightedText>Mentorship</HighlightedText>
+          </>
+        }
       />
       <MainFeature
-        heading={<>Kurikulum untuk <HighlightedText>Pemula</HighlightedText></>}
+        heading={
+          <>
+            Kurikulum untuk <HighlightedText>Pemula</HighlightedText>
+          </>
+        }
       />
-      <Testimonial 
-        heading={<>Apa Kata  <HighlightedText>Mereka?</HighlightedText></>}
+      <Testimonial
+        heading={
+          <>
+            Apa Kata <HighlightedText>Mereka?</HighlightedText>
+          </>
+        }
       />
-      <Pricing 
-        heading={<>Harga <HighlightedText>Pas</HighlightedText></>}
+      <Pricing
+        heading={
+          <>
+            Harga <HighlightedText>Pas</HighlightedText>
+          </>
+        }
       />
       <FAQ
-        heading={<>Ada  <HighlightedText>Pertanyaan ?</HighlightedText></>}
+        heading={
+          <>
+            Ada <HighlightedText>Pertanyaan ?</HighlightedText>
+          </>
+        }
       />
       <Blog
-        subheading="Goal Mentorship"
-        heading={<>Mampu Menyelesaikan <HighlightedText>Challenge</HighlightedText></>}
+        subheading="Goal Mentorship Mentee Tier 1"
+        heading={
+          <>
+            Mampu Menyelesaikan <HighlightedText>Challenge</HighlightedText>
+          </>
+        }
       />
-      <GetStarted/>
+
+      <GetStarted />
       <Footer />
     </AnimationRevealPage>
   );
-}
+};

@@ -60,7 +60,7 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 
 export default ({
   heading = "Mentorship Frontend Website",
-  description = "Mari Belajar Frontend Website mulai dari HTML, CSS dan SASS untuk menunjang impianmu menjadi seorang Frontend Website. Pendaftaran Batch 2, 11 - 23 Okt 2020",
+  description = "Mari Belajar Frontend Website mulai dari HTML, CSS dan SASS untuk menunjang impianmu menjadi seorang Frontend Website. Pelaksanaan Batch 3, 7 December 2020",
   primaryButtonText = "Daftar Sekarang",
   primaryButtonUrl = "#daftarMentee",
   watchVideoButtonText = "Watch Video",
@@ -82,7 +82,9 @@ export default ({
             <Heading>{heading}</Heading>
             <Paragraph>{description}</Paragraph>
             <Actions>
-              <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
+              <PrimaryButton as="a" href={primaryButtonUrl}>
+                {primaryButtonText}
+              </PrimaryButton>
               <WatchVideoButton onClick={toggleModal}>
                 <span className="playIconContainer">
                   <PlayIcon className="playIcon" />
@@ -93,11 +95,7 @@ export default ({
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-              <img
-                css={imageCss}
-                src={imageSrc}
-                alt="Hero"
-              />
+              <img css={imageCss} src={imageSrc} alt="Hero" />
               {imageDecoratorBlob && <DecoratorBlob2 />}
             </IllustrationContainer>
           </RightColumn>

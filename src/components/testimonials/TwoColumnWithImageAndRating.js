@@ -4,7 +4,10 @@ import Slider from "react-slick";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import {
+  SectionHeading,
+  Subheading as SubheadingBase,
+} from "components/misc/Headings.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import loveIllustrationImageSrc from "images/love-illustration.svg";
 import { ReactComponent as StarIconBase } from "images/star-icon.svg";
@@ -14,15 +17,17 @@ import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg"
 const Row = tw.div`flex flex-col md:flex-row justify-between items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 xl:w-6/12 flex-shrink-0 relative`;
-const TextColumn = styled(Column)(props => [
+const TextColumn = styled(Column)((props) => [
   tw`md:w-7/12 xl:w-6/12 mt-16 md:mt-0`,
-  props.textOnLeft ? tw`md:pr-12 lg:pr-16 md:order-first` : tw`md:pl-12 lg:pl-16 md:order-last`
+  props.textOnLeft
+    ? tw`md:pr-12 lg:pr-16 md:order-first`
+    : tw`md:pl-12 lg:pl-16 md:order-last`,
 ]);
 
-const Image = styled.img(props => [
+const Image = styled.img((props) => [
   props.imageRounded && tw`rounded`,
   props.imageBorder && tw`border`,
-  props.imageShadow && tw`shadow`
+  props.imageShadow && tw`shadow`,
 ]);
 
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
@@ -43,7 +48,9 @@ const TestimonialSlider = styled(Slider)`
 
 const Testimonial = tw.div`outline-none h-full flex! flex-col`;
 const StarsContainer = styled.div``;
-const StarIcon = tw(StarIconBase)`inline-block w-5 h-5 text-orange-400 fill-current mr-1 last:mr-0`;
+const StarIcon = tw(
+  StarIconBase
+)`inline-block w-5 h-5 text-orange-400 fill-current mr-1 last:mr-0`;
 const TestimonialHeading = tw.div`mt-4 text-xl font-bold`;
 const Quote = tw.blockquote`mt-4 mb-8 sm:mb-10 leading-relaxed font-medium text-gray-700`;
 
@@ -86,7 +93,7 @@ export default ({
       quote:
         "Mantap sekali mas, meski materinya termasuk berat banget tapi ngecovernya padet. Alhamdulillah jadi tercerahkan sama scss.",
       customerName: "Akhmad Dani M.",
-      customerTitle: "Socmed Expert."
+      customerTitle: "Socmed Expert.",
     },
     {
       stars: 5,
@@ -96,7 +103,7 @@ export default ({
       quote:
         "Gokil, daging bgt mas, tapi saya sempet tertinggal tadi huhu. Semoga ada rekamannya, terimakasih mas:) sukses selalu",
       customerName: "Gilang Segara B",
-      customerTitle: "Mahasiswa"
+      customerTitle: "Mahasiswa",
     },
     {
       stars: 5,
@@ -106,7 +113,7 @@ export default ({
       quote:
         "Kebantu banget sama pemberian contoh study case.Tips dari mas Faldi sendiri berdasarkan pengalaman, sangat mencerahkan. Menjawab pertanyaan sangat clear.",
       customerName: "Farid",
-      customerTitle: "Mahasiswa"
+      customerTitle: "Mahasiswa",
     },
     {
       stars: 5,
@@ -116,9 +123,27 @@ export default ({
       quote:
         "Materinya ngebuka wawasan baru banget. Akhirnya jadi ngeh lagi soal SCSS dkk. ",
       customerName: "Aishaa Lula",
-      customerTitle: "Mahasiswa"
-    }
-  ]
+      customerTitle: "Mahasiswa",
+    },
+    {
+      stars: 4,
+      profileImageSrc:
+        "https://images.generated.photos/e-2JEwCbkG4uYmCFRYRc5u5qlYoH__BjB7qej2ZpYi4/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA1MDI5NTdfMDU3/NDQwNl8wMzQ4NDAz/LmpwZw.jpg",
+      heading: "Mudah dipahami!",
+      quote: "Video penjelasan kursusnya sudah baik dan mudah dipahami ",
+      customerName: "M. Saiful Arif",
+      customerTitle: "Mahasiswa",
+    },
+    {
+      stars: 4,
+      profileImageSrc:
+        "https://images.generated.photos/UONDNyoX5qYO7luievN8tEoKmhqL87ADr-Cc9Cku3o0/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA4MzA1NzdfMDcw/NzcxN18wMTYxNjcy/LmpwZw.jpg",
+      heading: "Cocok sama penjelasannya!",
+      quote: "Overall cocok sama gaya menjelaskannya mas Naufaldi. Keren mas",
+      customerName: "Farid",
+      customerTitle: "Mahasiswa",
+    },
+  ],
 }) => {
   const [sliderRef, setSliderRef] = useState(null);
 
@@ -127,7 +152,12 @@ export default ({
       <ContentWithPaddingXl>
         <Row>
           <ImageColumn>
-            <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
+            <Image
+              src={imageSrc}
+              imageBorder={imageBorder}
+              imageShadow={imageShadow}
+              imageRounded={imageRounded}
+            />
           </ImageColumn>
           <TextColumn textOnLeft={textOnLeft}>
             <Subheading>{subheading}</Subheading>
@@ -137,18 +167,25 @@ export default ({
               {testimonials.map((testimonial, index) => (
                 <Testimonial key={index}>
                   <StarsContainer>
-                    {Array.from({ length: testimonial.stars }).map((_,indexIcon) => (
-                      <StarIcon key={indexIcon} />
-                    ))}
+                    {Array.from({ length: testimonial.stars }).map(
+                      (_, indexIcon) => (
+                        <StarIcon key={indexIcon} />
+                      )
+                    )}
                   </StarsContainer>
                   <TestimonialHeading>{testimonial.heading}</TestimonialHeading>
                   <Quote>{testimonial.quote}</Quote>
                   <CustomerInfoAndControlsContainer>
                     <CustomerInfo>
-                      <CustomerProfilePicture src={testimonial.profileImageSrc} alt={testimonial.customerName} />
+                      <CustomerProfilePicture
+                        src={testimonial.profileImageSrc}
+                        alt={testimonial.customerName}
+                      />
                       <CustomerTextInfo>
                         <CustomerName>{testimonial.customerName}</CustomerName>
-                        <CustomerTitle>{testimonial.customerTitle}</CustomerTitle>
+                        <CustomerTitle>
+                          {testimonial.customerTitle}
+                        </CustomerTitle>
                       </CustomerTextInfo>
                     </CustomerInfo>
                     <Controls>

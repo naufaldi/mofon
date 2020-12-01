@@ -1,8 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import {
+  SectionHeading,
+  Subheading as SubheadingBase,
+} from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
@@ -14,17 +17,15 @@ const Subheading = tw(SubheadingBase)`mb-4`;
 const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
-
 const PlansContainer = tw.div`flex justify-center flex-col md:flex-row items-center md:items-start relative`;
 const Plan = styled.div`
   ${tw`w-full max-w-72 mt-16 md:mr-12 md:last:mr-0 text-center px-8 rounded-lg relative text-gray-900 bg-white flex flex-col shadow-raised`}
 
-  ${props =>
+  ${(props) =>
     props.featured &&
     css`
       ${tw`border-2 border-gray-200 shadow-none`}
-    `
-    }
+    `}
 `;
 
 const PlanHeader = styled.div`
@@ -50,7 +51,7 @@ const PlanHeader = styled.div`
   .duration-wrong {
     ${tw`lowercase text-gray-500 font-medium tracking-widest`}
   }
-  .priceAndDuration-wrong{
+  .priceAndDuration-wrong {
     ${tw`line-through`}
   }
   .mainFeature {
@@ -86,25 +87,43 @@ export default ({
     {
       text: "Person",
     },
-  ]
+  ],
 }) => {
   const defaultPlans = [
     {
-      name: "Mahasiswa Plan",
-      durationPrices: ["Rp 50K"],
-      durationPricesWrong: ["Rp 65K"],
+      name: "Mentee Tier 1",
+      durationPrices: ["Rp 150K"],
+      durationPricesWrong: ["Rp 300K"],
       mainFeature: "Frontend Pemula",
-      features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"],
-      url: ["https://forms.gle/hrhA7CMfRDxwFVHW7"]
+      features: [
+        "4x Discuss Video",
+        "4x Mentorship Video 1:1",
+        "Feedback Code",
+        "4 Minggu",
+        "Slide Presentasi",
+        "Sumber Belajar",
+        "Grup Bersama",
+        "5 Person / Batch",
+      ],
+      url: ["https://karyakarsa.com/naufaldisatriya/rewards"],
     },
-    {
-      name: "Umum Plan",
-      durationPrices: ["Rp 85K"],
-      durationPricesWrong: ["Rp 100K"],
-      mainFeature: "Frontend Pemula",
-      features: ["3x Webinar", "3x Mentorship 1:1", "3 Minggu", "Slide Presentasi", "Sumber Belajar", "Grup Bersama", "15 Person / Batch"],
-      url: ["https://forms.gle/N7ee2RjSpAuT5vD77"]
-    },
+    // {
+    //   name: "Mentee Tier 2",
+    //   durationPrices: ["Rp 200K"],
+    //   durationPricesWrong: ["Rp 400K"],
+    //   mainFeature: "Mastering Frontend",
+    //   features: [
+    //     "4x Discuss Video",
+    //     "4x Mentorship Video 1:1",
+    //     "Feedback Code",
+    //     "4 Minggu",
+    //     "Materi Lanjutan Javascript",
+    //     "Sumber Belajar",
+    //     "Grup Bersama",
+    //     "2 Person / Batch",
+    //   ],
+    //   url: [""],
+    // },
   ];
 
   if (!plans) plans = defaultPlans;
@@ -124,14 +143,22 @@ export default ({
             <Plan key={index} featured={plan.featured}>
               <PlanHeader>
                 <span className="priceAndDuration">
-                  <span className="price">{plan.durationPrices[activeDurationIndex]}</span>
+                  <span className="price">
+                    {plan.durationPrices[activeDurationIndex]}
+                  </span>
                   <span className="slash"> / </span>
-                  <span className="duration">{planDurations[activeDurationIndex].text}</span>
+                  <span className="duration">
+                    {planDurations[activeDurationIndex].text}
+                  </span>
                 </span>
                 <span className="priceAndDuration-wrong">
-                  <span className="price-wrong">{plan.durationPricesWrong[activeDurationIndex]}</span>
+                  <span className="price-wrong">
+                    {plan.durationPricesWrong[activeDurationIndex]}
+                  </span>
                   <span className="slash-wrong"> / </span>
-                  <span className="duration-wrong">{planDurations[activeDurationIndex].text}</span>
+                  <span className="duration-wrong">
+                    {planDurations[activeDurationIndex].text}
+                  </span>
                 </span>
                 <span className="name">{plan.name}</span>
                 <span className="mainFeature">{plan.mainFeature}</span>
@@ -144,8 +171,12 @@ export default ({
                 ))}
               </PlanFeatures>
               <PlanAction>
-              <BuyNowButton href={plan.url[activeDurationIndex]} target="_blank" >Daftar</BuyNowButton>
-              
+                <BuyNowButton
+                  href={plan.url[activeDurationIndex]}
+                  target="_blank"
+                >
+                  Daftar
+                </BuyNowButton>
               </PlanAction>
             </Plan>
           ))}
