@@ -47,9 +47,24 @@ export default ({
   description = "Bertanyalah sebelum sesat berjalan.",
   faqs = [
     {
-      question: "Apa perbedaan Mentee Tier 1 dan Tier 2 ?",
+      question: "Apa perbedaan Mentee Reguler dan Tier 1 ?",
       answer:
-        "Tier 1 untuk membahas dasar HTML,CSS. Sedangkan Tier 2 membahas Dasar Javascript, CSS Lanjutan dan Animasi serta Framework CSS",
+        "Mentee reguler tidak bisa melakukan mentroship kelas video dan mentorship 1:1 video call. Kelas video dan 1:1 Video Call bisa diibaratkan seperti Les Privat / Bimbingan personal.",
+    },
+    {
+      question: "Bagimana teknis Class Video / Mentorship Video 1:1 ?",
+      answer:
+        "Seperti ditempat les, Class Video kita akan mengadakan workshop/webinar khusus berisi 5-10 orang. Mentorship Video 1:1 seperti Les Privat. Saya akan menjadi private tutor /pendamping untuk temen-temen belajar frontend selama satu minggu.",
+    },
+    {
+      question: "Berapa Kuota untuk Mentee Tier 1 ?",
+      answer:
+        "Biasanya saya akan membuat 5 - 7 orang perbatch. Tergantung waktu yang saya miliki. Karena tujuannya adalah untuk mentoring jadi harus insentif dan bisa lebih personal.",
+    },
+    {
+      question: "Berapa Kuota untuk Mentee Reguler ?",
+      answer:
+        "Tidak ada batasan kuota karena tidak ada sesi video call. Tetapi, tetap bisa konsultasi melalui grup.",
     },
     {
       question: "Apakah ini bisa diikuti oleh pemula ?",
@@ -64,12 +79,7 @@ export default ({
     {
       question: "Berapa durasi mentorship ?",
       answer:
-        "1 Bulan saya akan menjadi mentor. Memberikan pengarahan terkait belajar teman-teman. Seperti, apa yang harus dipelajari. Apa yang harus dilakukan, Apakah ini sudah tepat / belum dll.",
-    },
-    {
-      question: "Saya takut tertinggal materi,Bagaimana ?",
-      answer:
-        "Kecepatan belajar tiap orang berbeda. Makanya ini ada Discuss dan Mentorship. Webinar/ nonton video tutorial secara mandiri dilanjutkan dengan Mentorship untuk konsultasi dan tanya-tanya secara langsung biar masing-masing bisa tetap belajar terarah.",
+        "Untuk Mentee Reguler dan Mentee Tier 1, 1 Bulan sudah lebih dari cukup untuk membuat temen2 bisa memiliki skill/kemampuan untuk slicing, git dan deploy vercel",
     },
   ],
 }) => {

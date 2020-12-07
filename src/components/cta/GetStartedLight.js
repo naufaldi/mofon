@@ -36,7 +36,7 @@ export default ({
   subheading = "Tertarik Mentorship?",
   heading = "Daftar Mentorship Sekarang Juga.",
   primaryLinkText = "Daftar",
-  primaryLinkUrl = "https://karyakarsa.com/naufaldisatriya/rewards",
+  primaryLinkUrl = "https://karyakarsa.com/naufaldisatriya/premium-video-course-video-course-5-6-jam-frontend-developer-16455",
   secondaryLinkText = "Hubungi Kami",
   secondaryLinkUrl = "https://twitter.com/F2aldi",
   pushDownFooter = true,
