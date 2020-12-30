@@ -60,7 +60,7 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 
 export default ({
   heading = "Mentorship Frontend Website",
-  description = "Mari Belajar Frontend Website mulai dari HTML, CSS dan SASS untuk menunjang impianmu menjadi seorang Frontend Website. Pelaksanaan Batch 3, 7 December 2020",
+  description = "Mari Belajar Frontend Website mulai dari HTML, CSS dan SASS untuk menunjang impianmu menjadi seorang Frontend Website. Pelaksanaan Batch 4, 4 Januari 2021",
   primaryButtonText = "Daftar Sekarang",
   primaryButtonUrl = "#daftarMentee",
   watchVideoButtonText = "Watch Video",
