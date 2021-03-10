@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import tw from 'twin.macro';
 //eslint-disable-next-line
-import { css } from "styled-components/macro";
+import { css } from 'styled-components/macro';
 
-import Header from "../headers/light.js";
+import Header from '../headers/light.js';
 
-import ReactModalAdapter from "../../helpers/ReactModalAdapter.js";
-import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
+import ReactModalAdapter from '../../helpers/ReactModalAdapter.js';
+import ResponsiveVideoEmbed from '../../helpers/ResponsiveVideoEmbed.js';
 
-import { ReactComponent as PlayIcon } from "feather-icons/dist/icons/play-circle.svg";
-import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
-import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
-import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
-import DesignIllustration from "../../images/design-illustration.svg";
+import { ReactComponent as PlayIcon } from 'feather-icons/dist/icons/play-circle.svg';
+import { ReactComponent as CloseIcon } from 'feather-icons/dist/icons/x.svg';
+import { ReactComponent as SvgDecoratorBlob1 } from '../../images/svg-decorator-blob-1.svg';
+import { ReactComponent as SvgDecoratorBlob2 } from '../../images/dot-pattern.svg';
+import DesignIllustration from '../../images/design-illustration.svg';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -59,12 +59,12 @@ const StyledModal = styled(ReactModalAdapter)`
 const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-primary-500`;
 
 export default ({
-  heading = "Mentorship Frontend Website",
-  description = "Mari Belajar Frontend Website mulai dari HTML, CSS dan SASS untuk menunjang impianmu menjadi seorang Frontend Website. Pelaksanaan Batch 4, 4 Januari 2021",
-  primaryButtonText = "Daftar Sekarang",
-  primaryButtonUrl = "#daftarMentee",
-  watchVideoButtonText = "Watch Video",
-  watchVideoYoutubeUrl = "https://www.youtube.com/embed/TLmz_QfaEPM",
+  heading = 'Mentorship Frontend Website',
+  description = 'Mari Belajar Frontend Website mulai dari HTML, CSS dan SASS untuk menunjang impianmu menjadi seorang Frontend Website. Pelaksanaan Batch 5, 15 Maret 2021',
+  primaryButtonText = 'Daftar Sekarang',
+  primaryButtonUrl = '#daftarMentee',
+  watchVideoButtonText = 'Watch Video',
+  watchVideoYoutubeUrl = 'https://www.youtube.com/embed/TLmz_QfaEPM',
   imageSrc = DesignIllustration,
   imageCss = null,
   imageDecoratorBlob = false,
